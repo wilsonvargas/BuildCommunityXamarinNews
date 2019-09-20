@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:templates="clr-namespace:XamarinUIFeatures.Views.Templates"
+             xmlns:vm="clr-namespace:XamarinUIFeatures.ViewModels"
+             mc:Ignorable="d"
+             x:Class="XamarinUIFeatures.Views.DealsPage">
+    <ContentPage.BindingContext>
+        <vm:DealPageViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="Android" Value="0, 0, 0, 0"/>
+                    <On Platform="iOS" Value="0, -24, 0, 0"/>
+                </OnPlatform>
+            </StackLayout.Margin>
+            <!--Header-->
+            <Grid RowSpacing="8" ColumnSpacing="0" 
+                      Padding="20,0,0,0" HeightRequest="260"
+                      BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".65*"/>
+                    <RowDefinition Height=".35*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*"/>
+                    <ColumnDefinition Width=".5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" 
+                           FontFamily="{StaticResource RegularFont}" 
+                           FontSize="28"
+                           Text="Wilson Vargas"
+                            VerticalOptions="End"/>
+                <Image Grid.Row="0" Grid.Column="1" 
+                           Source="shapes_default.png" 
+                           HorizontalOptions="End"
+                           TranslationX="1"/>
+                <Label Grid.Row="1" Grid.Column="0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Style="{StaticResource TitleDetailHeader}" Text="Points"/>
+                            <Span Text="  "/>
+                            <Span Style="{StaticResource ValueDetailHeader}" Text="2231"/>
+                            <Span Text="  "/>
+                            <Span Style="{StaticResource IconDetailHeader}" Text=">"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Grid.Row="1" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Style="{StaticResource TitleDetailHeader}" Text="Status"/>
+                            <Span Text="  "/>
+                            <Span Style="{StaticResource ValueDetailHeader}" Text="50"/>
+                            <Span Text="  "/>
+                            <Span Style="{StaticResource IconDetailHeader}" Text=">"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+            <CollectionView ItemsSource="{Binding Deals}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <templates:DealCardView />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>    
+            </CollectionView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

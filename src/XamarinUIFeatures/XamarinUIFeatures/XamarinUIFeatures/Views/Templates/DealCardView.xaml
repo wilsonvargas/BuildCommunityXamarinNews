@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView HeightRequest="300"
+             VerticalOptions="Start"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             BackgroundColor="{StaticResource QantasLightGray}"
+             mc:Ignorable="d"
+             x:Class="XamarinUIFeatures.Views.Templates.DealCardView">
+    <ContentView.Content>
+        <Grid Padding="20" ColumnSpacing="0">            
+            <Image Aspect="AspectFill" Source="{Binding ImageUrl}" />
+            <BoxView Color="Gray" Opacity=".3" />
+            <!--Content-->
+            <Grid VerticalOptions="StartAndExpand" 
+                  HorizontalOptions="Start"
+                  Margin="10,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Title-->
+                <StackLayout Grid.Row="0">
+                    <Label Text="{Binding Title}" 
+                       FontSize="60" 
+                       TextColor="White"
+                       FontAttributes="Bold" 
+                       FontFamily="{StaticResource RegularFont}"/>
+                    <Label Text="{Binding Details}"
+                       TextColor="White"
+                       FontSize="16"
+                       Margin="5,-10,0,0"
+                       FontFamily="{StaticResource MediumFont}"/>
+                </StackLayout>
+                <Label Grid.Row="2" VerticalOptions="End">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="$"
+                                  TextColor="White"
+                                  FontAttributes="Bold"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource RegularFont}"/>
+                            <Span Text="{Binding DollarPrice}"
+                                  TextColor="White"
+                                  FontAttributes="Bold"
+                                  FontFamily="{StaticResource RegularFont}"
+                                  FontSize="50"/>
+                            <Span Text=" o "
+                                  TextColor="White"
+                                  FontAttributes="Bold"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource RegularFont}"/>
+                            <Span Text="S/."
+                                  TextColor="White"
+                                  FontAttributes="Bold"
+                                  FontSize="20"
+                                  FontFamily="{StaticResource RegularFont}"/>
+                            <Span Text="{Binding PenPrice}"
+                                  TextColor="White"
+                                  FontAttributes="Bold"
+                                  FontFamily="{StaticResource RegularFont}"
+                                  FontSize="50"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>   
+            
+            <!--Discount-->
+            <StackLayout BackgroundColor="{StaticResource QantasRed}"
+                         VerticalOptions="Start"
+                         HorizontalOptions="End"
+                         Opacity="0.8">
+                <Label Text="{Binding Discount, StringFormat='{0} % Dscto.'}" 
+                   Style="{StaticResource LabelDealsStyle}"/>
+            </StackLayout>
+            <!--More-->
+            <StackLayout BackgroundColor="{StaticResource QantasRed}"
+                         VerticalOptions="End"
+                         HorizontalOptions="End"
+                         Margin="0,0,0,15"
+                         Padding="10,5">
+                <Label Text="Ver más" 
+                       FontSize="16"
+                       Style="{StaticResource LabelDealsStyle}" />
+            </StackLayout>
+            
+        </Grid>
+    </ContentView.Content>
+</ContentView>
