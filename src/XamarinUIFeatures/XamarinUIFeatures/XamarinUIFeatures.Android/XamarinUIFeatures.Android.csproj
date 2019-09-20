@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAB9BC19-B9D6-4C38-B962-4D9C1868320C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XamarinUIFeatures.Droid</RootNamespace>
+    <AssemblyName>XamarinUIFeatures.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.815419" />
+    <PackageReference Include="Xamarin.Android.Support.ViewPager" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\brauer_neue_std.ttf" />
+    <AndroidAsset Include="Assets\ciutadella_medium.ttf" />
+    <AndroidAsset Include="Assets\ciutadella_regular.ttf" />
+    <AndroidAsset Include="Assets\ciutadella_semibold.ttf" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\tab_about.png" />
+    <AndroidResource Include="Resources\drawable\tab_feed.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_baggage.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_check_in.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_chevron_right_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_more_info_16dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_offer.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_person_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_plane.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_qstreaming_homepage.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_seat.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_trip.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\shapes_set4.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\shapes_silver.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_default.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shapes_default.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shapes_default.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shapes_default.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shapes_default.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\shapes_default.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinUIFeatures\XamarinUIFeatures.csproj">
+      <Project>{26FE5E99-AA5B-47B3-8005-484B2A26E1F8}</Project>
+      <Name>XamarinUIFeatures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

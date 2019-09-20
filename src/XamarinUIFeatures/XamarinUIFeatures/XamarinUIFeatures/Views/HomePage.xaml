@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource QantasLightGray}"
+             Visual="Material"
+             x:Class="XamarinUIFeatures.Views.HomePage">
+    <ContentPage.TranslationY>
+        <OnPlatform x:TypeArguments="x:Double">
+            <On Platform="Android" Value="0"/>
+            <On Platform="iOS" Value="-20"/>
+        </OnPlatform>
+    </ContentPage.TranslationY>
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="Android" Value="0, 0, 0, 0"/>
+                    <On Platform="iOS" Value="0, -24, 0, -24"/>
+                </OnPlatform>
+            </ScrollView.Margin>
+            <StackLayout>
+                <StackLayout.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="Android" Value="0, 0, 0, 0"/>
+                        <On Platform="iOS" Value="0, -24, 0, 0"/>
+                    </OnPlatform>
+                </StackLayout.Margin>
+                <!--Header-->
+                <Grid RowSpacing="8" ColumnSpacing="0" 
+                      Padding="20,0,0,0" HeightRequest="180"
+                      BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".65*"/>
+                        <RowDefinition Height=".35*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".5*"/>
+                        <ColumnDefinition Width=".5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" 
+                           FontFamily="{StaticResource RegularFont}" 
+                           FontSize="28"
+                           Text="Wilson Vargas"
+                            VerticalOptions="End"/>
+                    <Image Grid.Row="0" Grid.Column="1" 
+                           Source="shapes_default.png" 
+                           HorizontalOptions="End"
+                           TranslationX="1"/>
+                    <Label Grid.Row="1" Grid.Column="0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Style="{StaticResource TitleDetailHeader}" Text="Points"/>
+                                <Span Text="  "/>
+                                <Span Style="{StaticResource ValueDetailHeader}" Text="2231"/>
+                                <Span Text="  "/>
+                                <Span Style="{StaticResource IconDetailHeader}" Text=">"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Grid.Row="1" Grid.Column="1">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Style="{StaticResource TitleDetailHeader}" Text="Status"/>
+                                <Span Text="  "/>
+                                <Span Style="{StaticResource ValueDetailHeader}" Text="50"/>
+                                <Span Text="  "/>
+                                <Span Style="{StaticResource IconDetailHeader}" Text=">"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+                <StackLayout Padding="20" Spacing="0">
+                    <Label Text="Trip to Trujillo" 
+                           FontFamily="{StaticResource MediumFont}" 
+                           FontSize="22"/>
+                    <Label Text="VIEW TRIP  >" 
+                           TextColor="{StaticResource QantasRed}" 
+                           FontFamily="{StaticResource MediumFont}"
+                           FontSize="16"
+                           HorizontalOptions="End"/>
+
+                    <!--Trip Checkin-->
+                    <Frame Margin="0,12" Padding="15">
+                        <Grid ColumnSpacing="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.Column="0" 
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               Source="ic_check_in"/>
+                            <Label Grid.Row="0" Grid.Column="1"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Start">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Style="{StaticResource TitleCheckin}"
+                                          Text="Check-in opens in 2 weeks and 2 days"/>
+                                        <Span Style="{StaticResource DetailCheckin}"
+                                          Text="&#13;&#10;Check-in is available 24h before departure."/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+                    </Frame>
+                    <!--Trip Details-->
+                    <Frame Margin="0" Padding="0">
+                        <StackLayout Spacing="0">
+                            <Grid Margin="0,12"
+                                  Padding="15" 
+                                  ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="32"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Grid.Row="0"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Start"
+                                   Source="ic_launcher_round"
+                                   Aspect="AspectFill"
+                                   Scale="1.4"
+                                   TranslationY="4"/>
+                                <StackLayout Grid.Row="0" Grid.Column="1" 
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Start"
+                                         Spacing="14">
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Style="{StaticResource TitleCheckin}"
+                                                  Text="Brisbane to Melbourne"/>
+                                                <Span Style="{StaticResource DetailCheckin}"
+                                                  Text="&#13;&#10;QF615 • Wed, 17 Apr 2019"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <StackLayout Orientation="Horizontal"
+                                             Spacing="25">
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Style="{StaticResource FlightTimeLocationTitle}"
+                                                      Text="15:00"/>
+                                                    <Span Text="&#13;&#10;"/>
+                                                    <Span Style="{StaticResource FlightTimeLocationDetail}"
+                                                      Text="Terminal D"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Image Source="ic_plane"
+                                           Opacity="0.4"
+                                           Scale="0.75"
+                                           VerticalOptions="Start"/>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Style="{StaticResource FlightTimeLocationTitle}"
+                                                      Text="12:35"/>
+                                                    <Span Text="&#13;&#10;"/>
+                                                    <Span Style="{StaticResource FlightTimeLocationDetail}"
+                                                      Text="Terminal 1"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                            <ContentView BackgroundColor="{StaticResource QantasGray}"
+                                     Padding="-1,1">
+                                <StackLayout Padding="16,12" 
+                                         Orientation="Horizontal"
+                                         BackgroundColor="{StaticResource QantasLightGray}"
+                                         HeightRequest="30">
+                                    <Image HorizontalOptions="Center" 
+                                       VerticalOptions="Center"
+                                       Source="ic_seat.png"
+                                       Scale="0.65"
+                                       Aspect="AspectFit"
+                                       WidthRequest="30"/>
+                                    <Label VerticalOptions="Center"
+                                       Text="3F (window)"
+                                       FontFamily="{StaticResource RegularFont}"
+                                       FontSize="16"
+                                       TextColor="Black"
+                                       TranslationY="2"/>
+                                </StackLayout>
+                            </ContentView>
+                            <ContentView BackgroundColor="{StaticResource QantasGray}"
+                                     Padding="-1,1">
+                                <StackLayout Padding="16,12"
+                                         Orientation="Horizontal"
+                                         BackgroundColor="White"
+                                         HeightRequest="22">
+                                    <Image VerticalOptions="Center" 
+                                       HorizontalOptions="Center"
+                                       Source="ic_seat.png"
+                                       Scale="0.65"
+                                       Aspect="AspectFit"
+                                       WidthRequest="30"/>
+                                    <Label VerticalOptions="Center" 
+                                       FontFamily="{StaticResource MediumFont}"
+                                       FontSize="16"
+                                       TextColor="{StaticResource QantasRed}"
+                                       TranslationY="2"
+                                       Text="SELECT SEATS"/>
+                                </StackLayout>
+                            </ContentView>
+                            <ContentView BackgroundColor="{StaticResource QantasGray}"
+                                     Padding="-1,1">
+                                <StackLayout Padding="16,12"
+                                         Orientation="Horizontal"
+                                         BackgroundColor="White"
+                                         HeightRequest="22">
+                                    <Image VerticalOptions="Center" 
+                                       HorizontalOptions="Center"
+                                       Source="ic_baggage"
+                                       Scale="0.65"
+                                       Aspect="AspectFit"
+                                       WidthRequest="30"/>
+                                    <Label VerticalOptions="Center" 
+                                       FontFamily="{StaticResource MediumFont}"
+                                       FontSize="16"
+                                       TextColor="{StaticResource QantasRed}"
+                                       TranslationY="2"
+                                       Text="VIEW/PURCHASE BAGS"/>
+                                </StackLayout>
+                            </ContentView>
+                            <ContentView BackgroundColor="{StaticResource QantasGray}"
+                                     Padding="-1,1">
+                                <StackLayout Padding="16,12"
+                                         Orientation="Horizontal"
+                                         BackgroundColor="White"
+                                         HeightRequest="22">
+                                    <Image VerticalOptions="Center" 
+                                       HorizontalOptions="Center"
+                                       Source="ic_more_info_16dp"
+                                       Scale="0.65"
+                                       Aspect="AspectFit"
+                                       WidthRequest="30"/>
+                                    <Label VerticalOptions="Center" 
+                                       FontFamily="{StaticResource MediumFont}"
+                                       FontSize="16"
+                                       TextColor="{StaticResource QantasRed}"
+                                       TranslationY="2"
+                                       Text="VIEW FLIGHT DETAILS"/>
+                                </StackLayout>
+                            </ContentView>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

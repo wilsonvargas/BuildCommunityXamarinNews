@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       Shell.NavBarIsVisible="False"
+       mc:Ignorable="d"
+       xmlns:local="clr-namespace:XamarinUIFeatures.Views"
+       Title="XamarinUIFeatures"
+       x:Class="XamarinUIFeatures.AppShell">
+
+    <!-- 
+        Styles and Resources 
+    -->
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#FEFEFE</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.ForegroundColor" Value="Green" />
+                <Setter Property="Shell.TitleColor" Value="Black" />
+                <Setter Property="Shell.DisabledColor" Value="Blue" />
+                <Setter Property="Shell.UnselectedColor" Value="Orange" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="Purple"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="Gray"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="#E80000"/>
+            </Style>
+            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <ShellItem Title="Bottom Tab Sample"
+           Style="{StaticResource BaseStyle}">
+        <ShellSection Title="HOME" Icon="ic_home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        </ShellSection>
+
+        <ShellSection Title="TRIPS" Icon="ic_trip.png">
+            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
+        </ShellSection>
+
+        <ShellSection Title="BOOK" Icon="ic_plane.png">
+            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
+        </ShellSection>
+
+        <ShellSection Title="DEALS" Icon="ic_offer.png">
+            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
+        </ShellSection>
+
+        <ShellSection Title="MY QFF" Icon="ic_person_black_24dp.png">
+            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
+        </ShellSection>
+
+    </ShellItem>
+
+</Shell>
