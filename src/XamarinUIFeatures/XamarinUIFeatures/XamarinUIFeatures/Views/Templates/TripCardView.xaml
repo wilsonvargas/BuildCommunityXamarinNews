@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView WidthRequest="300"
+             HeightRequest="400"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinUIFeatures.Views.Templates.TripCardView">
+    <ContentView.Content>
+        <Grid Padding="5" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Date-->            
+            <Image Grid.Row="0" Aspect="AspectFill" Source="{Binding ImageUrl}" />
+            <BoxView Grid.Row="0" Color="Gray" Opacity=".3" />
+            <Label Grid.Row="0"
+                   Style="{StaticResource FlightTimeLocationTitle}"
+                   TextColor="White"
+                   Margin="10,5,0,0"
+                   FontAttributes="Bold"
+                   Text="{Binding Date, StringFormat='{0:MMMM d, yyyy}'}"
+                   HorizontalOptions="Start"/>
+            <StackLayout Grid.Row="1" Orientation="Vertical" 
+                         HorizontalOptions="StartAndExpand"
+                         VerticalOptions="StartAndExpand"
+                         BackgroundColor="White">
+                <!--Trips-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                           Style="{StaticResource FlightTimeLocationTitle}"
+                           Text="{Binding From}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Grid.Column="1" Source="ic_plane.png"
+                                           Opacity="0.4"
+                                           Scale="0.75"
+                                           VerticalOptions="Start"/>
+                    <Label Grid.Column="2" 
+                           Style="{StaticResource FlightTimeLocationTitle}"
+                           Text="{Binding To}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                </Grid>                
+                <!--Hours-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0" Spacing="0" Orientation="Vertical">
+                        <Label
+                           Style="{StaticResource FlightTimeLocationTitle}"
+                           Text="{Binding Departure, StringFormat='{}{0:hh\\:mm}'}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                        <Image Source="ic_plane_departure.png"
+                                           Opacity="0.4"
+                                           Scale="0.75"
+                                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="2" Spacing="0" Orientation="Vertical">
+                        <Label
+                           Style="{StaticResource FlightTimeLocationTitle}"
+                           Text="{Binding Arrival, StringFormat='{}{0:hh\\:mm}'}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                        <Image Source="ic_plane_arrival.png"
+                                           Opacity="0.4"
+                                           Scale="0.75"
+                                           VerticalOptions="Start"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

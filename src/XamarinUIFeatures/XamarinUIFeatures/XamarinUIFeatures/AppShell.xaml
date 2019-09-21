@@ -5,10 +5,11 @@
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        Shell.NavBarIsVisible="False"
        mc:Ignorable="d"
-       xmlns:local="clr-namespace:XamarinUIFeatures.Views"
+       xmlns:views="clr-namespace:XamarinUIFeatures.Views"
+       xmlns:templates="clr-namespace:XamarinUIFeatures.Views.Templates"
+       FlyoutBackgroundColor="{StaticResource QantasLightGray}"
        Title="XamarinUIFeatures"
        x:Class="XamarinUIFeatures.AppShell">
-
     <!-- 
         Styles and Resources 
     -->
@@ -28,30 +29,41 @@
             </Style>
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
-    </Shell.Resources>
+    </Shell.Resources>   
 
     <ShellItem Title="Bottom Tab Sample"
            Style="{StaticResource BaseStyle}">
         <ShellSection Title="HOME" Icon="ic_home.png">
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}"/>
+        </ShellSection>
+        <ShellSection Title="DEALS" Icon="ic_offer.png">
+            <ShellContent ContentTemplate="{DataTemplate views:DealsPage}"/>
         </ShellSection>
 
         <ShellSection Title="TRIPS" Icon="ic_trip.png">
-            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate views:TripsPage}"/>
         </ShellSection>
 
         <ShellSection Title="BOOK" Icon="ic_plane.png">
             <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
-        </ShellSection>
+        </ShellSection>        
 
-        <ShellSection Title="DEALS" Icon="ic_offer.png">
+        <ShellSection Title="PROFILE" Icon="ic_person_black_24dp.png">
             <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
         </ShellSection>
-
-        <ShellSection Title="MY QFF" Icon="ic_person_black_24dp.png">
-            <ShellContent ContentTemplate="{DataTemplate ContentPage}"/>
-        </ShellSection>
-
     </ShellItem>
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid VerticalOptions="Start">
+                <Label Margin="10" Text="{Binding Text}"
+                       Style="{StaticResource ValueDetailHeader}"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.FlyoutHeader>
+        <templates:FlyoutHeader />
+    </Shell.FlyoutHeader>
 
 </Shell>

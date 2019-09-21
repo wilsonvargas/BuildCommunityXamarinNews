@@ -6,7 +6,9 @@
              mc:Ignorable="d"
              x:Class="XamarinUIFeatures.App">
     <Application.Resources>
-        <ResourceDictionary>           
+        <ResourceDictionary>   
+            
+            <!--Fonts-->
             <OnPlatform x:Key="RegularFont" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Ciutadella-Rg"/>
                 <On Platform="Android" Value="ciutadella_regular.ttf#Regular"/>
@@ -15,7 +17,12 @@
                 <On Platform="iOS" Value="Ciutadella-Md"/>
                 <On Platform="Android" Value="ciutadella_medium.ttf#Regular"/>
             </OnPlatform>
-            
+
+            <!--Colors-->
+            <Color x:Key="QantasRed">#E80000</Color>
+            <Color x:Key="QantasGray">#F3F3F3</Color>
+            <Color x:Key="QantasLightGray">#F3F3F3</Color>
+
             <Style x:Key="TitleDetailHeader" TargetType="Span">
                 <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
                 <Setter Property="FontSize" Value="16" />
@@ -52,11 +59,22 @@
                 <Setter Property="FontSize" Value="14" />
                 <Setter Property="TextColor" Value="Gray" />
             </Style>
+            <Style x:Key="LabelDealsStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="TitleFlyoutStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
 
-            <!--Colors-->
-            <Color x:Key="QantasRed">#E80000</Color>
-            <Color x:Key="QantasGray">#F3F3F3</Color>
-            <Color x:Key="QantasLightGray">#F3F3F3</Color>
+            <Style x:Key="DetailFlyoutStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

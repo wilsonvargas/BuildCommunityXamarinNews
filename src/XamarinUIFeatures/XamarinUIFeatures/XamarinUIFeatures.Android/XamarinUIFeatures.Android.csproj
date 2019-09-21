@@ -103,91 +103,76 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_baggage.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_baggage.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_baggage.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_baggage.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_check_in.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_in.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_check_in.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_check_in.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_check_in.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_check_in.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_chevron_right_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_chevron_right_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_chevron_right_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_chevron_right_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_chevron_right_black_24dp.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_chevron_right_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_home.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_home.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_home.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_home.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_home.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_launcher_round.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_launcher_round.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_more_info_16dp.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_more_info_16dp.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_more_info_16dp.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_more_info_16dp.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_more_info_16dp.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_more_info_16dp.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_offer.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_offer.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_offer.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_offer.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_offer.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_offer.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_person_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_person_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_person_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_person_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_person_black_24dp.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_person_black_24dp.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_plane.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_plane.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_plane.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_plane.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_plane.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_plane.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_qstreaming_homepage.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_qstreaming_homepage.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_qstreaming_homepage.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_qstreaming_homepage.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_qstreaming_homepage.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_qstreaming_homepage.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_seat.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_seat.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_seat.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_seat.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_seat.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_seat.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_trip.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_trip.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_trip.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_trip.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_trip.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\ic_trip.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_set4.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\shapes_set4.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shapes_set4.png" />
     <AndroidResource Include="Resources\drawable-hdpi\shapes_set4.png" />
     <AndroidResource Include="Resources\drawable-mdpi\shapes_set4.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\shapes_set4.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_silver.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\shapes_silver.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shapes_silver.png" />
     <AndroidResource Include="Resources\drawable-hdpi\shapes_silver.png" />
     <AndroidResource Include="Resources\drawable-mdpi\shapes_silver.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\shapes_silver.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\shapes_default.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\shapes_default.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shapes_default.png" />
     <AndroidResource Include="Resources\drawable-hdpi\shapes_default.png" />
     <AndroidResource Include="Resources\drawable-mdpi\shapes_default.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\shapes_default.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\header.jpg" />
@@ -200,6 +185,36 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_plane_arrival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_plane_arrival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_plane_arrival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_plane_arrival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_plane_arrival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_plane_departure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_plane_departure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_plane_departure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_plane_departure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_plane_departure.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

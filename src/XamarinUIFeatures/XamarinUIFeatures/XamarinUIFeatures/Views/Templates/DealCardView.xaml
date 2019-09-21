@@ -85,7 +85,6 @@
                        FontSize="16"
                        Style="{StaticResource LabelDealsStyle}" />
             </StackLayout>
-            
         </Grid>
     </ContentView.Content>
 </ContentView>

@@ -6,21 +6,22 @@
              xmlns:templates="clr-namespace:XamarinUIFeatures.Views.Templates"
              xmlns:vm="clr-namespace:XamarinUIFeatures.ViewModels"
              mc:Ignorable="d"
-             x:Class="XamarinUIFeatures.Views.DealsPage">
+             BackgroundColor="{StaticResource QantasLightGray}"
+             x:Class="XamarinUIFeatures.Views.TripsPage">
     <ContentPage.BindingContext>
-        <vm:DealPageViewModel/>
+        <vm:TripPageViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="Android" Value="0, 0, 0, 0"/>
+                    <On Platform="Android" Value="0, -5, 0, 0"/>
                     <On Platform="iOS" Value="0, -24, 0, 0"/>
                 </OnPlatform>
             </StackLayout.Margin>
             <!--Header-->
             <Grid RowSpacing="8" ColumnSpacing="0" 
-                      Padding="20,0,0,0" HeightRequest="259"
+                      Padding="20,0,0,0" HeightRequest="555"
                       BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".65*"/>
@@ -62,14 +63,36 @@
                     </Label.FormattedText>
                 </Label>
             </Grid>
-            <CollectionView ItemsSource="{Binding Deals}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <templates:DealCardView />
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>    
-            </CollectionView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Padding="20,0">
+                    <Label FontFamily="{StaticResource MediumFont}" 
+                       FontSize="22"
+                       Text="National Trips" />
+                    <CollectionView ItemsSource="{Binding NationalTrips}" ItemsLayout="HorizontalList">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <templates:TripCardView />
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Padding="20,0">
+                    <Label FontFamily="{StaticResource MediumFont}" 
+                       FontSize="22"
+                       Text="International Trips"/>
+                    <CollectionView ItemsSource="{Binding InternationalTrips}" ItemsLayout="HorizontalList">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <templates:TripCardView />
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Grid>
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>

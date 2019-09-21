@@ -8,6 +8,7 @@ namespace XamarinUIFeatures.ViewModels
 {
     public class DealPageViewModel : ViewModelBase
     {
+        public ObservableCollection<Deal> Deals { get; }
         public DealPageViewModel()
         {
             Deals = new ObservableCollection<Deal>
@@ -50,6 +51,5 @@ namespace XamarinUIFeatures.ViewModels
                 }
             };
         }
-        public ObservableCollection<Deal> Deals { get; }
     }
 }
