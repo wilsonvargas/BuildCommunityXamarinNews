@@ -60,10 +60,8 @@
                        VerticalTextAlignment="Center" />
             </Grid>
         </DataTemplate>
-    </Shell.ItemTemplate>
-
+    </Shell.ItemTemplate> 
     <Shell.FlyoutHeader>
         <templates:FlyoutHeader />
     </Shell.FlyoutHeader>
-
 </Shell>

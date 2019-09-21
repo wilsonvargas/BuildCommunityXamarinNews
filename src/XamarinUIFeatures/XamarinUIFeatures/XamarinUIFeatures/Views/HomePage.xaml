@@ -100,7 +100,7 @@
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Style="{StaticResource TitleCheckin}"
-                                          Text="Check-in opens in 2 weeks and 2 days"/>
+                                          Text="Check-in opens now!"/>
                                         <Span Style="{StaticResource DetailCheckin}"
                                           Text="&#13;&#10;Check-in is available 24h before departure."/>
                                     </FormattedString>
@@ -133,9 +133,9 @@
                                         <Label.FormattedText>
                                             <FormattedString>
                                                 <Span Style="{StaticResource TitleCheckin}"
-                                                  Text="Brisbane to Melbourne"/>
+                                                  Text="Lima to Trujillo"/>
                                                 <Span Style="{StaticResource DetailCheckin}"
-                                                  Text="&#13;&#10;QF615 • Wed, 17 Apr 2019"/>
+                                                  Text="&#13;&#10;QF615 • Sat, 21 Sep 2019"/>
                                             </FormattedString>
                                         </Label.FormattedText>
                                     </Label>
