@@ -22,3 +22,7 @@ This project shows some features of Xamarin UI added to 4.1 version
   <img src="https://github.com/wilsonvargas/BuildCommunityXamarinNews/raw/master/images/ios2.png" width="280" /> 
   <img src="https://github.com/wilsonvargas/BuildCommunityXamarinNews/raw/master/images/ios3.png" width="280" />
 </p>
+
+### Created By Wilson Vargas
+* Twitter: [@Wilson_VargasM](http://twitter.com/Wilson_VargasM)
+* Blog: [wilsonvargas.net](https://wilsonvargas.net)
